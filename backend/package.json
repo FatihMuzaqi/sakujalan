@@ -1,0 +1,47 @@
+{
+  "name": "tripex-backend",
+  "version": "1.0.0",
+  "description": "TripEx SaaS - Travel Expense & Realtime Monitoring System Backend API",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed.js",
+    "db:sync": "node scripts/sync-db.js",
+    "test": "cross-env NODE_ENV=test node --test --test-concurrency=1 tests/phase0_foundation.test.js tests/phase2_auth.test.js tests/phase3_company_members.test.js tests/phase4_trip_management.test.js tests/phase5_expense_wallet.test.js tests/phase6_realtime_gps.test.js tests/phase7_receipt_ocr_ai.test.js tests/phase8_dashboard_monitoring.test.js tests/phase9_subscription_payment.test.js tests/phase10_security_hardening.test.js tests/phase11_superadmin_portal.test.js tests/phase12_subscription_access_control.test.js tests/auth_tenant.test.js tests/trip_expense.test.js tests/subscription_webhook.test.js"
+  },
+  "keywords": [
+    "saas",
+    "multi-tenant",
+    "travel-expense",
+    "gps-tracking",
+    "ocr",
+    "express",
+    "sequelize"
+  ],
+  "author": "TripEx Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.12.0",
+    "node-cron": "^3.0.3",
+    "sequelize": "^6.37.5",
+    "socket.io": "^4.8.1",
+    "tesseract.js": "^5.1.1",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.9",
+    "socket.io-client": "^4.8.3",
+    "sqlite3": "^6.0.1",
+    "supertest": "^7.2.2"
+  }
+}

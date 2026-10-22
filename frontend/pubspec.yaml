@@ -1,0 +1,39 @@
+name: sakulajan_app
+description: "TripEx SaaS - Travel Expense & Realtime Monitoring Flutter Client"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  dio: ^5.4.3+1
+  go_router: ^14.0.1
+  flutter_secure_storage: ^9.0.0
+  geolocator: ^11.0.0
+  google_maps_flutter: ^2.6.0
+  image_picker: ^1.1.0
+  socket_io_client: ^2.0.3+1
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.6
+  google_sign_in: ^6.2.2
+  permission_handler: ^11.3.1
+  pdf: ^3.10.8
+  printing: ^5.13.0
+  path_provider: ^2.1.3
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
